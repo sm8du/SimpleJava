@@ -1,0 +1,12 @@
+
+public class Abstracts {
+
+	public static void main(String[] args) {
+		Canine c = new KleeKai("Lilah", "Grey/White", 5, 'F');
+		Canine d = new SiberianHusky("Alaska", "Grey/Black/White", 16, 'F');
+		c.printInfo();
+		d.printInfo();
+
+	}
+
+}

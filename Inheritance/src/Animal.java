@@ -1,24 +1,26 @@
 
-public class Animal {
+public abstract class Animal {
 	public int age;
-	
 	public Animal(int age){
 		System.out.println("An animal has been created!");
 	}
-	
-	public void eat(){
-		System.out.println("An animal is eating");
+	public abstract void eat();
+
+	public void sleep(){
+		System.out.println("An animal is sleeping...zzzz");
 	}
-	
 	public static void main(String[] args) {
 		
-	Animal a = new Animal(5);
-	dog d = new dog();
+	
+	Dog d = new Dog();
 	Cat c = new Cat();
-	d.bark();
-	c.meow();
 	d.eat();
-	d.run();
-	}
+	c.eat();
+	d.sleep();
+	c.sleep();
+	
+	//Casting
+	Object dog = new Dog();
+	Dog realDog = (Dog) dog;	}
 
 }
