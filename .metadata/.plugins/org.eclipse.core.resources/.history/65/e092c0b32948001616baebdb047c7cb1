@@ -78,7 +78,7 @@ public class LibCatalogue {
 	}
 	
 	public void sorry(Book book){
-		System.out.println("Sorry, "+ book.getTitle() + " is already checked out. "
+		System.out.println("Sorry, "+ book.getTitle() + " is already checked out."
 				+ "It should be back on day "+ (book.getDayCheckedOut() +getLengthofCheckoutPeriod())+ ".");
 	}
 	
@@ -89,10 +89,9 @@ public class LibCatalogue {
 		bookCollection.put("Apple 101", apple);
 		LibCatalogue lib = new LibCatalogue(bookCollection);
 		lib.checkOutBook("Apple 101");
-		System.out.println(apple.getIsCheckedOut());
 		lib.setDay(20);
 		lib.returnBook("Apple 101");
-		System.out.println(apple.getIsCheckedOut());
+		apple.getDayCheckedOut();
 		apple.getISBN();
 		
 		

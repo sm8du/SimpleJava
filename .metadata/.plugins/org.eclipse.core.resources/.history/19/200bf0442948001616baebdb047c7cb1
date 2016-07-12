@@ -60,7 +60,7 @@ public class LibCatalogue {
 		else {
 			book.setIsCheckedOut(true, currentDay);
 			System.out.println("You just checked out "+ title + ". "
-					+ "It is due in "+ (getCurrentDay() + getLengthofCheckoutPeriod() + " days."));
+					+ "it is due on "+ (getCurrentDay() + getLengthofCheckoutPeriod() + "."));
 		}
 		
 	}
@@ -71,30 +71,24 @@ public class LibCatalogue {
 		
 		if (daysLate > 0){
 			System.out.println("You owe the library $" + (getStaticLateFee() + daysLate*getVarPerLateDay()) + " because"
-					+ " your book is " + daysLate+ " days overdue.");
+					+ "your book is " + daysLate+ "days overdue.");
 			
 		}
 		book.setIsCheckedOut(false, -1);
 	}
 	
 	public void sorry(Book book){
-		System.out.println("Sorry, "+ book.getTitle() + " is already checked out. "
+		System.out.println("Sorry, "+ book.getTitle() + " is already checked out."
 				+ "It should be back on day "+ (book.getDayCheckedOut() +getLengthofCheckoutPeriod())+ ".");
 	}
 	
 	
 	public static void main(String[] args) {
 		Map<String, Book> bookCollection = new HashMap<String,Book>();
-		Book apple = new Book("Apple 101", 2323, 9999999);
-		bookCollection.put("Apple 101", apple);
+		Book harry = new Book("Harry Potter", 2323, 9999999);
+		bookCollection.put("Harry Potter", harry);
 		LibCatalogue lib = new LibCatalogue(bookCollection);
-		lib.checkOutBook("Apple 101");
-		System.out.println(apple.getIsCheckedOut());
-		lib.setDay(20);
-		lib.returnBook("Apple 101");
-		System.out.println(apple.getIsCheckedOut());
-		apple.getISBN();
-		
+		lib.checkOutBook("Harry Potter");
 		
 	}
 

@@ -91,6 +91,7 @@ public class LibCatalogue {
 		lib.checkOutBook("Apple 101");
 		System.out.println(apple.getIsCheckedOut());
 		lib.setDay(20);
+		lib.checkOutBook("Apple 101");
 		lib.returnBook("Apple 101");
 		System.out.println(apple.getIsCheckedOut());
 		apple.getISBN();
