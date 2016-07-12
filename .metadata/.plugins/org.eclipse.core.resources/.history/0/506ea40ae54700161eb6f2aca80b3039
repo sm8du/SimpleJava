@@ -1,0 +1,17 @@
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+ll
+=======
+
+>>>>>>> origin/master
+>>>>>>> 6017d89cb7f0555cb65ac56b6769bec604c94052
+	}
+
+}
