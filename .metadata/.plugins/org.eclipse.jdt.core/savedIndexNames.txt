@@ -1,3 +1,2 @@
 INDEX VERSION 1.127+/Users/Moscalu/Documents/workspace/.metadata/.plugins/org.eclipse.jdt.core
-2100553339.index
 482775344.index
