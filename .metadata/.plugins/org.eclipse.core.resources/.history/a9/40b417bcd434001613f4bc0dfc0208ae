@@ -1,0 +1,23 @@
+class Robot {
+	public void speak(String text)  {
+		System.out.println("Sam says "+ text);
+	}
+	public void jump(int height)
+		System.out.println("Jummping: "+height);
+}
+
+
+
+public class Parameters {
+
+	public static void main(String[] args) {
+		
+		Robot sam = new Robot();
+		
+		
+		sam.speak("Hi I'm Sam");
+		sam.jump(7);
+	
+	}
+
+}

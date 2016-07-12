@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class input {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	/*int[][] multi = new int[3][4];
+	
+		for (int row = 0; row < multi.length; row++){
+			for (int col = 0; col < multi[row].length; col++){
+				System.out.print(multi[row][col]);
+			}
+				System.out.println();
+
+		
+		
+		}
+		*/
+	Scanner input = new Scanner(System.in);
+	
+		double wage = input.nextDouble();
+		
+		System.out.printf("You entered $%.2f", wage );
+}
+}

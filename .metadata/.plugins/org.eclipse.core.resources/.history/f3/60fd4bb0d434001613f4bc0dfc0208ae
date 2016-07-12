@@ -1,0 +1,22 @@
+class Robot {
+	public void speak(String text)  {
+		System.out.println("Sam says "+ text);
+	}
+	
+}
+
+
+
+public class Parameters {
+
+	public static void main(String[] args) {
+		
+		Robot sam = new Robot();
+		
+		
+		sam.speak("Hi I'm Sam");
+	
+	
+	}
+
+}

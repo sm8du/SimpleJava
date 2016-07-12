@@ -1,0 +1,15 @@
+
+public class Plant {
+	public String name; 
+	
+	public Plant() {
+		this.name = "Freddy";
+	}
+	
+	public void start() {
+		System.out.println("Machine Started");
+	}
+	public void stop(){
+		System.out.println("Machine Stopped");
+	}
+}

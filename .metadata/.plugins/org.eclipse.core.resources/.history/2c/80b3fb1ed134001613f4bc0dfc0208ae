@@ -1,0 +1,21 @@
+
+class Person {
+	String name;
+	int age;
+
+}
+
+
+
+
+public class Methods {
+	public static void main(String[] args) {
+
+		
+		Person person1 = new Person();
+		
+		person1.name = "Stefan";
+		person1.age = "23";
+		
+	}
+}

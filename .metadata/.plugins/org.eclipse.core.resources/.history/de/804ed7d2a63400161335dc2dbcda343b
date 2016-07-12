@@ -1,0 +1,13 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		int number2;
+		
+		number2 = 99;
+		System.out.println(number2);
+		
+	}
+
+}

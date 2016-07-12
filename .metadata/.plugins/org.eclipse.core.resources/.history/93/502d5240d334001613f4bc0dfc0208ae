@@ -1,0 +1,31 @@
+class Person {
+	String name; 
+	int age;
+	
+	void speak() {
+		System.out.println("My name is: "+name);
+	}
+	
+	int calculateYear() {
+		int yearsLeft = (65-age);
+		System.out.println(yearsLeft);
+		
+		return yearsLeft;
+	}
+	
+}
+
+
+
+
+public class Getters {
+	public static void main(String[] args) {
+		Person person1 = new Person();
+		
+		person1.name = "Stefan";
+		person1.age = 23;
+		
+		person1.speak();
+		person1.calculateYear();
+	}
+}

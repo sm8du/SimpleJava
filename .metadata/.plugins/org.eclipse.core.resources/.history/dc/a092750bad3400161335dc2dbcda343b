@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+public class input {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] values;
+		values = new int[4];
+		
+		System.out.println(values[]);
+	}
+
+}

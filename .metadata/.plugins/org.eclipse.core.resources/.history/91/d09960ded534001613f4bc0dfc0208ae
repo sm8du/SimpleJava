@@ -1,0 +1,29 @@
+public class Person {
+	String name; 
+	int age;
+	public void setAge(int newAge){
+		age = newAge;
+	}
+	
+	public void speak() {
+		System.out.println("My name is: "+name);
+	}
+	
+	public int getAge() {
+		return age;
+	}
+}
+
+
+
+
+public class Getters {
+	public static void main(String[] args) {
+		Person person1 = new Person();
+		
+	
+		person1.setAge(23);
+		person1.getAge();
+		
+	}
+}
