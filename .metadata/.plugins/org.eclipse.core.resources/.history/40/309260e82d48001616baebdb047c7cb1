@@ -1,0 +1,8 @@
+
+public class dog extends Animal {
+	// adding extends :: OBJECT-> Animal --> Dog
+	public Dog(){
+		super(15); // calling Animal constructor
+		System.out.println("A dog has been created!");
+	}
+}
