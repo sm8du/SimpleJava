@@ -15,8 +15,10 @@ import java.util.Scanner;
  */
 public class SurvivalField {
 
-	
+	// The SurvivalField needs a canvas to draw on
 	public SimpleCanvas canvas;
+
+	// The InfoFrame that you use for output instead of System.out
 	private InfoFrame output;
 
 	// -----------------------------------------
@@ -28,7 +30,13 @@ public class SurvivalField {
 	private double mY = 0;
 	private int click = 0;
 
-
+	// You should setup fields to keep up with:
+	// - a whole bunch of Zombies
+	// - a single Human
+	// - some way to know if the game is over
+	// - a way to keep track of the score
+	// - how many zombies you should start with
+	// -----------------------------------------
 
 	// -----------------------------------------
 	// Methods
@@ -46,10 +54,10 @@ public class SurvivalField {
 		// Create canvas object with 500x500 spatial dimensions.
 		canvas = new SimpleCanvas(500, 500, this);
 
-		// Initialize output frame
+		// Initialize your output frame
 		output = new InfoFrame(this);
 
-		//initial zombies and Human
+		// Here is where you should create your initial zombies and your Human
 
 		player = new Human(250, 250, 35, 35, 3, 0, 1);
 		zombie = new ArrayList<Zombie>();
@@ -66,7 +74,7 @@ public class SurvivalField {
 		zombie.add(new Zombie(random.nextInt(i), random.nextInt(i), speed,
 				speed, player));
 
-		// 20 is a good speed for the human - 10 for the zombie
+		// 20 is a good speed for the human - 10 for the zombie, but experiment!
 		output.println("New Player Created!  You start with 3 bombs and 1 nuke!");
 		output.println("There are three levels to this game. Good luck!");
 	}
@@ -94,7 +102,9 @@ public class SurvivalField {
 	}
 
 	/**
-	 * This method controls the bomb action. 
+	 * This method controls the bomb action. It should ask the player if it has
+	 * any bombs. If so, that count should be decremented by one. Then every
+	 * zombie within a 50 pixel radius of the player should be eliminated.
 	 */
 	public void detonateBomb(Human player) {
 
@@ -168,7 +178,19 @@ public class SurvivalField {
 
 	}
 
-	
+	/**
+	 * This is the main drawing function that is automatically called whenever
+	 * the canvas is ready to be redrawn. The 'elapsedTime' argument is the
+	 * time, in seconds, since the last time this function was called.
+	 * 
+	 * Other things this method should do: - draw the zombies and the human on
+	 * the screen - tell the zombies and human to move - check to see if the
+	 * game is over after they move - halt the game if the game is over - update
+	 * the score for every cycle that the user is alive - add a new zombie every
+	 * 5000 cycles - add a new bomb every 100000 cycles
+	 * 
+	 * 
+	 */
 	int ZombieCounter = 0;
 	int BombCounter = 0;
 	int NukeCounter = 0;
@@ -286,7 +308,8 @@ public class SurvivalField {
 			}
 		}
 
-		// Following the mouse
+		// Following the mouse: Player Chose to do this here. The zombies were
+		// done in their own class...
 
 		// X direction
 		if (player.getX() > mX)
@@ -382,7 +405,7 @@ public class SurvivalField {
 	}
 
 	/**
-	 * Main method
+	 * Your standard main method
 	 * 
 	 * @param args
 	 * @throws Exception

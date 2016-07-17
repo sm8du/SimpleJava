@@ -1,4 +1,16 @@
-
+/**
+ * Human.java
+ * 
+ * The player's character. It should have a location, a location to which it is
+ * trying to go, a relative speed, and a number of bombs. You should create
+ * appropriate methods for movement, changing the target location,
+ * incrementing/decrementing bombs, and all appropriate constructors.
+ * 
+ * @authors
+ * @compids
+ * @lab
+ * 
+ */
 public class Human {
 	
 	

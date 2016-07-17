@@ -6,6 +6,18 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.text.DefaultCaret;
 
+/**
+ * InfoFrame.java
+ * 
+ * This class provides a dialog window for status information about the game to
+ * be displayed. It is used by creating an instance of the object and then
+ * calling println and print just as you would with System.out.
+ * 
+ * See SurvivalField.java for examples.
+ * 
+ * @author Mark Sherriff
+ * 
+ */
 public class InfoFrame {
 
 	private JTextArea textArea = null;

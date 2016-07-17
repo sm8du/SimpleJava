@@ -54,7 +54,11 @@ public class SimpleCanvas extends JPanel implements MouseListener,
 		this.addMouseMotionListener(this);
 	}
 
-	
+	/**
+	 * This method is NEVER called by the programmer. This method is called
+	 * whenever the screen refreshes. Consequently, it calls the draw() method
+	 * in SurvivalField, telling it to update its components.
+	 */
 	protected void paintComponent(Graphics g) {
 		boolean first = (lastTime == -1L);
 		long elapsedTime = System.nanoTime() - lastTime;
