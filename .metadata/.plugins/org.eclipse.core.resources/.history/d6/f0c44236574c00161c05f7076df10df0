@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Palindrome {
+
+	
+	
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the word: ");
+		String n = scan.next();
+	    boolean right = true;
+	    int test = n.length() - 1;
+	    for (int i = 0; i < n.length(); i++) {
+	      if (n.charAt(i) != n.charAt(test - i)) {
+	        right = false;
+	      }
+	    }
+	    System.out.println("The word is " + right);
+
+	}
+
+}
