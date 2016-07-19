@@ -1,0 +1,13 @@
+
+public class URL_Open {
+
+	public URL_Open() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

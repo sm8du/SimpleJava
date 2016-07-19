@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+
+public class Frames {
+
+
+	private static void Frame() {
+		JFrame  frame  = new JFrame("Swing"); // Creates frame object 
+		frame.setVisible(true); // The frame is naturally invisible
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // You need this to insure the Frame Closes
+	
+		// Set the x, y, width and height properties
+	    frame.setBounds(100, 100, 300, 300);
+	
+	}
+
+
+	public static void main(String[] args) {
+		Frame();
+		
+	}
+
+}

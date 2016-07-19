@@ -1,0 +1,16 @@
+
+public class OS_Type {
+
+	public static void main(String[] args) {
+		String name = "os.name";
+		String version ="os.version";
+		String arch = "os.arch";
+		String user = "user.name";
+		
+		System.out.println("OS: " + System.getProperty(name));
+		System.out.println("Version: " + System.getProperty(version));
+		System.out.println("Arch: " + System.getProperty(arch));
+		System.out.println("Current User: " + System.getProperty(user));
+	}
+
+}

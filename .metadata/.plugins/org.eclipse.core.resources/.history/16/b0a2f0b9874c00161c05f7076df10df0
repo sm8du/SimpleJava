@@ -1,0 +1,13 @@
+
+public class OS_Type {
+
+	public OS_Type() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

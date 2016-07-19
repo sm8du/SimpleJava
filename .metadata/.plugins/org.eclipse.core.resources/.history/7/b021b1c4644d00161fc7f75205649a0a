@@ -1,0 +1,40 @@
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Frames {
+
+
+	private static void Frame() {
+		JFrame  frame  = new JFrame("Swing"); // Creates frame object 
+		frame.setVisible(true); // The frame is naturally invisible
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // You need this to insure the Frame Closes
+	
+		// Set the x, y, width and height properties
+	    // frame.setBounds(100, 100, 300, 200); : This is not needed when using the pack method below
+	    // Get the reference of  the   content  pane
+	    Container contentPane = frame.getContentPane();
+	    // Create a  JButton 
+	    JButton okButton   = new JButton("OK");
+	    JButton closeButton  = new JButton("Close");
+	    closeButton.addActionListener(e -> System.exit(0));
+	    // Add  a Component to contentPane 
+	    contentPane.add(okButton);
+	    frame.getRootPane().setDefaultButton(okButton);
+	    contentPane.add(closeButton);
+	    
+	    // Calculates and sets appropriate size for the frame based on components.
+	    frame.pack();
+	   // the location must be manually set though using setLocation(x,y) if pack is used
+	    frame.setLocation(300,300);
+	
+	}
+
+
+	public static void main(String[] args) {
+		Frame();
+		
+	}
+
+}

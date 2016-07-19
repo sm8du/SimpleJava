@@ -1,0 +1,15 @@
+
+public class JFrame {
+
+	public JFrame() {
+		// Create a  JFrame  object
+		JFrame  frame  = new JFrame("Swing");
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+
+public class Frames {
+
+	public Frames() {
+		// Create a  JFrame  object
+	}
+	
+
+	private static void Frame() {
+		JFrame  frame  = new JFrame("Swing");
+		
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Frame();
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+import javax.swing.JFrame;
+
+public class Frames {
+
+	public Frames() {
+		// Create a  JFrame  object
+	}
+	
+
+	private static void Frame() {
+		JFrame  frame  = new JFrame("Swing");
+		frame.setVisible(true);
+	}
+
+
+	public static void main(String[] args) {
+		Frame();
+		
+	}
+
+}

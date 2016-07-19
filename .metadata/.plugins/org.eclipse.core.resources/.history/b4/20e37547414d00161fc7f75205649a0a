@@ -1,0 +1,18 @@
+import javax.swing.JFrame;
+
+public class Frames {
+
+
+	private static void Frame() {
+		JFrame  frame  = new JFrame("Swing");
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+
+	public static void main(String[] args) {
+		Frame();
+		
+	}
+
+}
